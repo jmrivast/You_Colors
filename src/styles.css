@@ -167,6 +167,7 @@ h1, h2, h3 {
 
 .brand-link { width: max-content; }
 .logo-slot {
+  display: block;
   position: relative;
   width: 170px;
   height: 48px;
@@ -398,6 +399,7 @@ h1, h2, h3 {
 .project-strip__meta a { margin-top: auto; width: 44px; height: 44px; display: grid; place-items: center; }
 
 .print-visual {
+  display: block;
   position: relative;
   min-height: 170px;
   overflow: hidden;
@@ -561,6 +563,11 @@ h1, h2, h3 {
 .portfolio-work__meta { position: absolute; z-index: 6; left: 1rem; bottom: 1rem; max-width: calc(100% - 2rem); color: var(--surface); font-family: var(--font-mono); font-size: 0.66rem; text-shadow: 0 1px 4px var(--fg), 0 2px 12px var(--fg); }
 .portfolio-work__meta p { margin: 0.15rem 0; }
 .portfolio-work__meta h3 { margin: 0.15rem 0; font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0; text-transform: uppercase; }
+
+.portfolio-work[hidden] { display: none !important; }
+.portfolio-work__meta { display: flex; flex-direction: column; }
+.portfolio-work__meta > span { margin: 0.15rem 0; }
+.portfolio-work__meta > strong { margin: 0.15rem 0; font-family: var(--font-mono); font-size: 0.72rem; font-weight: 700; letter-spacing: 0; text-transform: uppercase; }
 
 .workshop { position: relative; min-height: 430px; overflow: hidden; background: var(--fg); color: var(--surface); }
 .workshop__visual { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0.58; }
